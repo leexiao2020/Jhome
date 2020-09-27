@@ -66,7 +66,7 @@ public class FileServiceImpl implements FileService {
             logger.info("文件上传fastdfs成功：" + fileId);
             //dfsFileService.save(fileId, FileStringUtil.getFileNameByPath(fileName), Files.getFileExtension(fileName), len);
             logger.info("文件保存记录成功：" + fileId);
-        } else if (Constant.FASTDFS_SERVER.equals(serverType)) {
+        } else if (Constant.ORDINARY_SERVER.equals(serverType)) {
             logger.info("##上传文件..##");
             InputStream inputStream = null;
             byte[] fileBuff = null;
@@ -127,7 +127,7 @@ public class FileServiceImpl implements FileService {
             logger.info("文件上传fastdfs成功：" + fileId);
             //dfsFileService.save(fileId, fileName, Files.getFileExtension(fileName), len);
             logger.info("文件保存记录成功：" + fileId);
-        } else if (Constant.FASTDFS_SERVER.equals(serverType)) {
+        } else if (Constant.ORDINARY_SERVER.equals(serverType)) {
             logger.debug("##上传文件..##");
             byte[] fileBuff = null;
             try {
@@ -162,7 +162,7 @@ public class FileServiceImpl implements FileService {
                 //dfsFileService.save(fileId, request.getFileNames()[i], Files.getFileExtension(request.getFileNames()[i]), len);
                 logger.info("文件保存记录成功：" + fileId);
             }
-        } else if (Constant.FASTDFS_SERVER.equals(serverType)) {
+        } else if (Constant.ORDINARY_SERVER.equals(serverType)) {
             logger.debug("##上传文件..##");
             byte[] fileBuff = null;
             try {
@@ -200,7 +200,7 @@ public class FileServiceImpl implements FileService {
 //            } catch (Exception e) {
 //                Shift.fatal(HttpStatusCodesEnum.FASTDFS_REQUEST_ERR, e.getMessage());
 //            }
-        } else if (Constant.FASTDFS_SERVER.equals(serverType)) {
+        } else if (Constant.ORDINARY_SERVER.equals(serverType)) {
             logger.info("##上传文件..##");
             InputStream inputStream = null;
             byte[] fileBuff = null;
@@ -271,7 +271,7 @@ public class FileServiceImpl implements FileService {
 //            } catch (Exception e) {
 //                Shift.fatal(HttpStatusCodesEnum.FASTDFS_REQUEST_ERR, e.getMessage());
 //            }
-        } else if (Constant.FASTDFS_SERVER.equals(serverType)) {
+        } else if (Constant.ORDINARY_SERVER.equals(serverType)) {
             logger.info("##上传文件..##");
             InputStream inputStream = null;
             byte[] fileBuff = null;
@@ -333,7 +333,7 @@ public class FileServiceImpl implements FileService {
 //            fileId = aliyunOSSUtil.upLoad(multipartFile.getInputStream(), FileStringUtil.getFileNameByPath(fileName));
 //            logger.info("文件上传成功：" + fileId);
 //            dfsFileService.save(fileId, FileStringUtil.getFileNameByPath(fileName), Files.getFileExtension(fileName), len);
-        } else if (Constant.FASTDFS_SERVER.equals(serverType)) {
+        } else if (Constant.ORDINARY_SERVER.equals(serverType)) {
             logger.info("##上传文件..##");
             InputStream inputStream = null;
             byte[] fileBuff = null;
@@ -380,7 +380,7 @@ public class FileServiceImpl implements FileService {
 //        }
         if (Constant.OSS_SERVER.equals(serverType)) {
             aliyunOSSUtil.delete(request.getFileId());
-        } else if (Constant.FASTDFS_SERVER.equals(serverType)) {
+        } else if (Constant.ORDINARY_SERVER.equals(serverType)) {
             fileUploadUtils.deleteFile(request.getFileId());
         }
         //dfsFileService.delDfsFile(request.getFileId());
@@ -401,7 +401,7 @@ public class FileServiceImpl implements FileService {
             if (Constant.OSS_SERVER.equals(serverType)) {
                 //下载oss
 //                aliyunOSSUtil.download(request.getFileId(), response);
-            } else if (Constant.FASTDFS_SERVER.equals(serverType)) {
+            } else if (Constant.ORDINARY_SERVER.equals(serverType)) {
                 fileUploadUtils.downloadFile(request.getFileId(), response);
             }
         } catch (Exception e) {

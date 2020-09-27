@@ -5,11 +5,13 @@ import com.bracket.common.FastDFS.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
 import java.io.IOException;
 import java.util.Locale;
 
@@ -63,31 +65,18 @@ public class FastDFSController extends BaseController {
 //        return new FileResponseData(true);
 //    }
 
-    /**
-     * 上传文件通用，只上传文件到服务器，不会保存记录到数据库
-     *
-     * @param file
-     * @param request
-     * @return 返回文件路径等信息
-     */
-    @PostMapping(value = "/upload/file/sample")
+
+    @PostMapping(value = "/upload/file/sample",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    @ApiOperation(value = "", notes = "")
+    @ApiOperation(value = "上传文件通用，只上传文件到服务器，不会保存记录到数据库", notes = "")
     public FileResponseData uploadFileSample(MultipartFile file, HttpServletRequest request){
         return uploadSample(file, request);
     }
 
-    /**
-     * 只能上传图片，只上传文件到服务器，不会保存记录到数据库. <br>
-     * 会检查文件格式是否正确，默认只能上传 ['png', 'gif', 'jpeg', 'jpg'] 几种类型.
-     *
-     * @param file
-     * @param request
-     * @return 返回文件路径等信息
-     */
+
     @PostMapping("/upload/image/sample")
     @ResponseBody
-    @ApiOperation(value = "", notes = "")
+    @ApiOperation(value = "只能上传图片，只上传文件到服务器，不会保存记录到数据库", notes = "会检查文件格式是否正确，默认只能上传 ['png', 'gif', 'jpeg', 'jpg'] 几种类型.")
     public FileResponseData uploadImageSample(@RequestParam MultipartFile file, HttpServletRequest request){
         // 检查文件类型
         if(!FileCheck.checkImage(file.getOriginalFilename())){
@@ -100,18 +89,9 @@ public class FastDFSController extends BaseController {
         return uploadSample(file, request);
     }
 
-    /**
-     * 只能上传文档，只上传文件到服务器，不会保存记录到数据库. <br>
-     * 会检查文件格式是否正确，默认只能上传 ['pdf', 'ppt', 'xls', 'xlsx', 'pptx', 'doc', 'docx'] 几种类型.
-     *
-     * @param file
-     * @param request
-     * @return 返回文件路径等信息
-     */
     @PostMapping("/upload/doc/sample")
     @ResponseBody
-    @ApiOperation(value = "", notes = "")
-
+    @ApiOperation(value = "只能上传文档，只上传文件到服务器，不会保存记录到数据库.", notes = "会检查文件格式是否正确，默认只能上传 ['pdf', 'ppt', 'xls', 'xlsx', 'pptx', 'doc', 'docx'] 几种类型.")
     public FileResponseData uploadDocSample(@RequestParam MultipartFile file, HttpServletRequest request){
         // 检查文件类型
         if(!FileCheck.checkDoc(file.getOriginalFilename())){
@@ -124,34 +104,34 @@ public class FastDFSController extends BaseController {
         return uploadSample(file, request);
     }
 
-    /**
-     * 以附件形式下载文件
-     *
-     * @param filePath 文件地址
-     * @param response
-     */
-    @ApiOperation(value = "", notes = "")
+
+    @ApiOperation(value = "以附件形式下载文件", notes = "")
     @GetMapping("/download/file")
     public void downloadFile(String filePath, HttpServletResponse response) throws FastDFSException {
         try {
-            fastDFSClient.downloadFile(filePath, response);
+            String fileUrl="";
+            if(filePath.contains("?"))
+                fileUrl=filePath.substring(filePath.indexOf("group1"),filePath.lastIndexOf("?"));
+            else
+                fileUrl=filePath.substring(filePath.lastIndexOf("group1"),filePath.length());
+            fastDFSClient.downloadFile(fileUrl, response);
         } catch (FastDFSException e) {
             e.printStackTrace();
             throw e;
         }
     }
 
-    /**
-     * 获取图片 使用输出流输出字节码，可以使用< img>标签显示图片<br>
-     *
-     * @param filePath 图片地址
-     * @param response
-     */
-    @ApiOperation(value = "", notes = "")
+
+    @ApiOperation(value = "获取图片 使用输出流输出字节码，可以使用< img>标签显示图片", notes = "")
     @GetMapping("/download/image")
     public void downloadImage(String filePath, HttpServletResponse response) throws FastDFSException {
         try {
-            fastDFSClient.downloadFile(filePath, response.getOutputStream());
+            String fileUrl="";
+            if(filePath.contains("?"))
+                fileUrl=filePath.substring(filePath.indexOf("group1"),filePath.lastIndexOf("?"));
+            else
+                fileUrl=filePath.substring(filePath.lastIndexOf("group1"),filePath.length());
+            fastDFSClient.downloadFile(fileUrl, response.getOutputStream());
         } catch (FastDFSException e) {
             e.printStackTrace();
             throw e;
@@ -169,7 +149,12 @@ public class FastDFSController extends BaseController {
     public FileResponseData deleteFile(String filePath, Locale locale) {
         FileResponseData responseData = new FileResponseData();
         try {
-            fastDFSClient.deleteFile(filePath);
+            String fileUrl="";
+            if(filePath.contains("?"))
+                fileUrl=filePath.substring(filePath.indexOf("group1"),filePath.lastIndexOf("?"));
+            else
+                fileUrl=filePath.substring(filePath.lastIndexOf("group1"),filePath.length());
+            fastDFSClient.deleteFile(fileUrl);
         } catch (FastDFSException e) {
             e.printStackTrace();
             responseData.setSuccess(false);
@@ -179,13 +164,8 @@ public class FastDFSController extends BaseController {
         return responseData;
     }
 
-    /**
-     * 获取访问文件的token
-     *
-     * @param filePath 文件路径
-     * @return
-     */
-    @ApiOperation(value = "", notes = "")
+
+    @ApiOperation(value = "获取访问文件的token", notes = "")
     @PostMapping("/get/token")
     @ResponseBody
     public FileResponseData getToken(String filePath){

@@ -41,7 +41,7 @@ public class FileUploadUtils {
 
             log.info("file save path:" + desc.getAbsolutePath());
             FileUtils.writeByteArrayToFile(desc, fastDFSFile.getContent());
-            return fileName;
+            return fileName.replace('\\','/');
         } catch (Exception e) {
             throw new IOException(e.getMessage(), e);
         }
