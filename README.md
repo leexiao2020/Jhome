@@ -11,12 +11,19 @@
 *  8.redisson（操作Redis缓存数据库框架）
 *  9.rabbitmq（消息队列）
 *  10.mybatis + mybatis-Plush
-*  11.Nginx
+*  11.Nginx+FastDFS分布式文件系统
 ## jhome 架构图 
 ![image](https://github.com/dayuhan/Jhome/blob/master/img-storage/1.jpg) 
- 
+
+## jhome v1.4 框架升级内容  
+### 升级概要：引入文件上传服务（Jhome-fileStore）
+### 引入技术： 
+*  FastDFS 分布式文件管理
+*  阿里云上传 
+*  普通本地仓库管理 
+
 ## jhome v1.3 框架升级内容  
-### 升级概要：搭建可靠消息服务（JhomeTransactionService）
+### 升级概要：搭建可靠消息服务（Jhome-TransactionService）
 ### 引入技术： 
 *  RabbitMq 消息队列 实现分布式系统中事务回滚
 
