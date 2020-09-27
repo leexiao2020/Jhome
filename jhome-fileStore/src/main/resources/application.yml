@@ -60,7 +60,7 @@ spring:
   thymeleaf:
     prefix: classpath:/templates/
   datasource:
-    url: jdbc:mysql://10.1.241.152:3306/gta_ebd?serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://10.1.241.152:3306/mysqlDb?serverTimezone=UTC&useSSL=false
     username: root
     password: root152
     type: com.alibaba.druid.pool.DruidDataSource
@@ -205,10 +205,10 @@ logging:
 
 #OSS
 lximage:
-  endpoint: oss-cn-shenzhen.aliyuncs.com
-  keyid: ENC(HGxgc/RnXlnnqetFPxQY2y6QTaot3dU3Qqvzf5F8MiM=)
-  keysecret: ENC(wOck2Me0nU1Bj21mbW2LyE6orMjU28I49Ou9sZxLPTb1ttum9Ukp4w==)
-  bucketname1: gta-cloudserver
+  endpoint:
+  keyid:
+  keysecret:
+  bucketname1:
   filehost: test
 
 # 文件服务器地址

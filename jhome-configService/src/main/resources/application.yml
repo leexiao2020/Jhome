@@ -14,7 +14,7 @@ spring:
   application:
     name: jhome-configService
   datasource:
-    url: jdbc:mysql://10.1.241.152:3306/gta_ebd?serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://10.1.241.152:3306/mysqlDb?serverTimezone=UTC&useSSL=false
     username: root
     password: root152
     driverClassName: com.mysql.cj.jdbc.Driver

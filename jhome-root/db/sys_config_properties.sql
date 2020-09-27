@@ -5,7 +5,7 @@
  Source server Type    : MySQL
  Source server Version : 50717
  Source Host           : 10.1.241.152:3306
- Source Schema         : gta_ebd
+ Source Schema         : mysqlDb
 
  Target server Type    : MySQL
  Target server Version : 50717
@@ -84,7 +84,7 @@ INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `applicati
 INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `application`, `isEnable`, `profile`, `label`, `createTime`, `createBy`, `updateTime`, `updateBy`, `isPublicComponent`) VALUES ('89eb12c8-b8e2-4b17-87c7-f9a6bfc918bu', 'UC认证配置-加密秘钥', 'uc-apiconfig.signature', 'ky6xbsOp1UotNvz3H7fI', 'jhome-account', 0, 'dev', 'master', '2020-08-22 09:23:11', 'admin', '2020-08-22 09:23:11', 'admin', 0);
 INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `application`, `isEnable`, `profile`, `label`, `createTime`, `createBy`, `updateTime`, `updateBy`, `isPublicComponent`) VALUES ('89eb12c8-b8e2-4b17-87c7-f9a6bfc918bv', 'UC认证配置-产品ID', 'uc-apiconfig.appId', 'OhtZG', 'jhome-account', 0, 'dev', 'master', '2020-08-22 09:23:11', 'admin', '2020-08-22 09:23:11', 'admin', 0);
 INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `application`, `isEnable`, `profile`, `label`, `createTime`, `createBy`, `updateTime`, `updateBy`, `isPublicComponent`) VALUES ('89eb12c8-b8e2-4b17-87c7-f9a6bfc918bw', '账户服务tomcat-端口号', 'server.port', '8100', 'jhome-account', 0, 'dev', 'master', '2020-08-22 09:23:11', 'admin', '2020-08-22 09:23:11', 'admin', 0);
-INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `application`, `isEnable`, `profile`, `label`, `createTime`, `createBy`, `updateTime`, `updateBy`, `isPublicComponent`) VALUES ('89eb12c8-b8e2-4b17-87c7-f9a6bfc918bx', '数据库配置master-地址', 'spring.datasource.dynamic.datasource.master.url', 'jdbc:mysql://10.1.241.152:3306/gta_ebd?serverTimezone=UTC&useSSL=false', 'bigscreen', 0, 'dev', 'master', '2020-08-22 09:23:11', 'admin', '2020-08-22 09:23:11', 'admin', 0);
+INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `application`, `isEnable`, `profile`, `label`, `createTime`, `createBy`, `updateTime`, `updateBy`, `isPublicComponent`) VALUES ('89eb12c8-b8e2-4b17-87c7-f9a6bfc918bx', '数据库配置master-地址', 'spring.datasource.dynamic.datasource.master.url', 'jdbc:mysql://10.1.241.152:3306/mysqlDb?serverTimezone=UTC&useSSL=false', 'bigscreen', 0, 'dev', 'master', '2020-08-22 09:23:11', 'admin', '2020-08-22 09:23:11', 'admin', 0);
 INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `application`, `isEnable`, `profile`, `label`, `createTime`, `createBy`, `updateTime`, `updateBy`, `isPublicComponent`) VALUES ('89eb12c8-b8e2-4b17-87c7-f9a6bfc918by', '数据库配置-密码', 'spring.datasource.password', 'root152', 'jhome-web', 0, 'dev', 'master', '2020-08-22 09:23:11', 'admin', '2020-08-22 09:23:11', 'admin', 0);
 INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `application`, `isEnable`, `profile`, `label`, `createTime`, `createBy`, `updateTime`, `updateBy`, `isPublicComponent`) VALUES ('89eb12c8-b8e2-4b17-87c7-f9a6bfc918bz', '数据库配置master-用户名', 'spring.datasource.dynamic.datasource.master.root', 'root', 'bigscreen', 0, 'dev', 'master', '2020-08-22 09:23:11', 'admin', '2020-08-22 09:23:11', 'admin', 0);
 
@@ -96,7 +96,7 @@ INSERT INTO `cs_registered_config`(`id`, `paramName`, `key`, `value`, `applicati
  Source server Type    : MySQL
  Source server Version : 50717
  Source Host           : 10.1.241.152:3306
- Source Schema         : gta_ebd
+ Source Schema         : mysqlDb
 
  Target server Type    : MySQL
  Target server Version : 50717
