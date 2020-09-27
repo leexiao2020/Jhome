@@ -98,7 +98,7 @@
    （正在修复，消费A段退出，先调用A段的退出把Subject 认证状态isAuthenticated
     变成false,在调用服务B段退出设置B段的Subject的isAuthenticated，刷新当前页即可 服务B段退出，A段做做感知判断）
     
-### 即将升级计划
+### 后续升级计划
 *  分段上传
 *  分页组件
 *  Netty 整合 RabbitMQ 形式实现
