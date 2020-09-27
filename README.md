@@ -15,20 +15,20 @@
 ## jhome 架构图 
 ![image](https://github.com/dayuhan/Jhome/blob/master/img-storage/1.jpg) 
 
-## jhome v1.4 框架升级内容  
+## jhome v1.4  
 ### 升级概要：引入文件上传服务（Jhome-fileStore）
 ### 引入技术： 
 *  FastDFS 分布式文件管理
 *  阿里云上传 
 *  普通本地仓库管理 
 
-## jhome v1.3 框架升级内容  
+## jhome v1.3
 ### 升级概要：搭建可靠消息服务（Jhome-TransactionService）
 ### 引入技术： 
 *  RabbitMq 消息队列 实现分布式系统中事务回滚
 
 
-## jhome v1.2 框架升级内容  
+## jhome v1.2  
 ### 升级概要：搭建代码生成器服务（jhome-codeGenerator），采velocity模板引擎，一键生成：controller dao mapper model/bo model/vo model/query service service/impl
 
 ### 引入技术： 
@@ -38,7 +38,7 @@
 ![image](https://github.com/dayuhan/Jhome/blob/master/img-storage/4.jpg) 
 
 
-## jhome v1.1 框架升级内容  
+## jhome v1.1
 
 ### 升级概要：该版本重点搭建了消息中心（jhome-NettyService），配置中心（jhome-configService），公共组件服务（jhome-common）
 
@@ -58,7 +58,7 @@
   
   
   
-## jhome v1.0 框架升级内容 
+## jhome v1.0
 
 ### 升级概要：该版本重点引入了Shrio框架，针对在分布式系统中，各个服务之间用户授、认证做了集中处理: 搭建了注册中心（jhome-registrationService），统一管理各个服务
 
