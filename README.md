@@ -16,7 +16,7 @@
 ![image](https://github.com/dayuhan/Jhome/blob/master/img-storage/1.jpg) 
 
 ## jhome v1.4  
-### 升级概要：引入文件上传服务（Jhome-fileStore）
+### 升级概要：搭建文件上传服务（Jhome-fileStore）
 ### 引入技术： 
 *  FastDFS 分布式文件管理
 *  阿里云上传 
@@ -60,7 +60,7 @@
   
 ## jhome v1.0
 
-### 升级概要：该版本重点引入了Shrio框架，针对在分布式系统中，各个服务之间用户授、认证做了集中处理: 搭建了注册中心（jhome-registrationService），统一管理各个服务
+### 升级概要：该版本重点引入了Shrio框架 Pack4J 框架（CAS单点登录），针对在分布式系统中，各个服务之间用户授、认证做了集中处理:  搭建了注册中心（jhome-registrationService），统一管理各个服务
 
 ### 引入技术： 
 *  1.Spring 全家桶 （SpringBoot Spring SpringCloud ）
