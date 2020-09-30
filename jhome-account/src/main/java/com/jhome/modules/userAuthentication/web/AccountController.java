@@ -2,6 +2,7 @@ package com.jhome.modules.userAuthentication.web;
 
 import com.alibaba.fastjson.JSONObject;
 import com.bracket.common.Bus.AbstractController.BaseController;
+import com.bracket.common.Bus.AbstractModel.PageUtils;
 import com.bracket.common.Bus.ResponseJson;
 import com.bracket.common.Identity.UserUtil;
 import com.bracket.common.ToolKit.JSONUtils;
@@ -66,6 +67,7 @@ public class AccountController extends BaseController {
         } catch (Exception ex) {
             return new ResponseJson().error("登陆失败").toString();
         }
+
         return null;
     }
 

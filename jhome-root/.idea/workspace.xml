@@ -88,8 +88,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\XProject\Jhome\jhome-registrationService\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bracket.common.Bus.AbstractValidateParam" />
+      <recent name="com.nettyService.service" />
+      <recent name="com.nettyService.config" />
+      <recent name="com.fileStore.conmmon" />
+      <recent name="com.daxu.common.Bus.AbstractInterceptor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\EatingTools\XProject\Jhome\jhome-common\src\main\java\com\bracket\common" />
@@ -97,16 +107,6 @@
       <recent name="D:\EatingTools\XProject\Jhome\jhome-root\db" />
       <recent name="D:\EatingTools\XProject\Jhome\jhome-codeGenerator\src\main\resources" />
       <recent name="D:\XProject\Jhome\jhome-common\src\main\java\com\daxu\common\Bus\AbstractModel" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.nettyService.service" />
-      <recent name="com.nettyService.config" />
-      <recent name="com.fileStore.conmmon" />
-      <recent name="com.daxu.common.Bus.AbstractInterceptor" />
-      <recent name="com.daxu.common.Bus.AbstractController" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\XProject\Jhome\jhome-registrationService\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,7 +350,7 @@
       <workItem from="1601202585760" duration="552000" />
       <workItem from="1601278403678" duration="316000" />
       <workItem from="1601282128452" duration="7000" />
-      <workItem from="1601453980214" duration="3110000" />
+      <workItem from="1601453980214" duration="4439000" />
     </task>
     <servers />
   </component>

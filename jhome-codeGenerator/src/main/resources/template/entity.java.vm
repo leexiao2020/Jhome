@@ -7,17 +7,16 @@ import ${pkg};
 import io.swagger.annotations.*;
 import com.fasterxml.jackson.annotation.*;
 import org.springframework.format.annotation.DateTimeFormat;
-import com.Util.common.Bus.AbstractModel.PageInfoRequest;
 import com.baomidou.mybatisplus.annotation.*;
 #end
 #if(${entityLombokModel})
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-#if(${chainModel})
-import lombok.experimental.Accessors;
+    #if(${chainModel})
+    import lombok.experimental.Accessors;
+    #end
 #end
-#end
-
+import com.bracket.common.Bus.AbstractModel.PageInfoRequest;
 
 
 /**

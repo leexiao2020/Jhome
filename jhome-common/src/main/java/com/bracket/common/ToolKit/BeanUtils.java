@@ -1,9 +1,4 @@
-package com.bracket.common.ToolKit;/**
- * @program: jhome-root
- * @description
- * @author: Daxv
- * @create: 2020-08-22 12:34
- **/
+package com.bracket.common.ToolKit;
 
 import com.beust.jcommander.internal.Lists;
 
