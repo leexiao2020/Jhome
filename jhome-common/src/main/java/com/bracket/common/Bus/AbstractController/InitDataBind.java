@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.InitBinder;
  * 初始化数据绑定器
  */
 @ControllerAdvice
-public class InitDataBind extends GlobalDataPreprocessingController {
+public class InitDataBind extends GlobalDataExceptionController {
     @InitBinder("b")
     public void b(WebDataBinder binder) {
         binder.setFieldDefaultPrefix("b.");

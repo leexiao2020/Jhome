@@ -1,10 +1,4 @@
-package com.sysAnnotation.common.annotation;/**
- * @program: jhome-root
- * @description
- * @author: Daxv
- * @create: 2020-08-22 13:16
- **/
-
+package com.sysAnnotation.common.validator;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.Arrays;

@@ -1,9 +1,9 @@
-package ${package.Mapper};
-
-import ${package.Entity}.${entity};
-import ${superMapperClassPackage};
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import org.apache.ibatis.annotations.Param;
+package com.bracket.common.ToolKit;/**
+ * @program: jhome-root
+ * @description
+ * @author: Daxv
+ * @create: 2020-09-30 16:42
+ **/
 
 /**
  //
@@ -25,14 +25,16 @@ import org.apache.ibatis.annotations.Param;
  //     ...:::           ::::::::::::'              ``::.
  //    ```` ':.          ':::::::::'                  ::::..
  //                       '.:::::'                    ':'````..
- * @description: $!{table.comment} Mapper 接口
- * @author:  ${author}
- * @create: ${date}
+ * @program: jhome-root
+ * @description: 对象复制异常
+ * @author: Daxv
+ * @create: 2020-09-30 16:42
  **/
-#if(${kotlin})
-interface ${table.mapperName} : ${superMapperClass}<${entity}>
-#else
-public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
-    IPage<${entity}> select${entity}PageList(IPage<${entity}> page,@Param("queryObject") ${entity}Query queryObject);
+public class CopyPropertyException  extends Exception{
+    public CopyPropertyException() {
     }
-#end
+
+    public CopyPropertyException(String message) {
+        super(message);
+    }
+}

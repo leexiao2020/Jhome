@@ -2,9 +2,9 @@
 //
 //import us.codecraft.webmagic.Page;
 //import us.codecraft.webmagic.model.AfterExtractor;
-//import us.codecraft.webmagic.model.annotation.ExtractBy;
-//import us.codecraft.webmagic.model.annotation.HelpUrl;
-//import us.codecraft.webmagic.model.annotation.TargetUrl;
+//import us.codecraft.webmagic.model.validator.ExtractBy;
+//import us.codecraft.webmagic.model.validator.HelpUrl;
+//import us.codecraft.webmagic.model.validator.TargetUrl;
 //
 //@TargetUrl("https://www.hao123.com/\\w+")
 //@HelpUrl("https://www.hao123.com/\\w+")

@@ -72,7 +72,7 @@ public class BeanUtils {
                 target = tClass.newInstance();
             } catch (Exception e) {
                 e.printStackTrace();
-                //throw new CopyPropertyException("目标对象创建失败");
+                throw new CopyPropertyException("目标对象创建失败");
             }
 
             // 循环取到源对象的单个属性
@@ -107,7 +107,7 @@ public class BeanUtils {
                             break;
                         } catch (Exception e) {
                             e.printStackTrace();
-                            //throw new CopyPropertyException("转换失败，请检查属性类型是否匹配");
+                            throw new CopyPropertyException("转换失败，请检查属性类型是否匹配");
                         }
                     }
                 }
@@ -139,7 +139,7 @@ public class BeanUtils {
             target = tClass.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
-            //throw new CopyPropertyException("目标对象创建失败");
+            throw new CopyPropertyException("目标对象创建失败");
         }
 
         // 循环取到源对象的单个属性
@@ -174,7 +174,7 @@ public class BeanUtils {
                         break;
                     } catch (Exception e) {
                         e.printStackTrace();
-                        //throw new CopyPropertyException("转换失败，请检查属性类型是否匹配");
+                        throw new CopyPropertyException("转换失败，请检查属性类型是否匹配");
                     }
                 }
             }

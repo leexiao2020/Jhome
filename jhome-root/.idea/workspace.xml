@@ -346,7 +346,11 @@
       <workItem from="1600847364302" duration="601000" />
       <workItem from="1601022860990" duration="1087000" />
       <workItem from="1601129601845" duration="1203000" />
-      <workItem from="1601172910562" duration="197000" />
+      <workItem from="1601172910562" duration="1478000" />
+      <workItem from="1601202585760" duration="552000" />
+      <workItem from="1601278403678" duration="316000" />
+      <workItem from="1601282128452" duration="7000" />
+      <workItem from="1601453980214" duration="3110000" />
     </task>
     <servers />
   </component>
@@ -380,12 +384,12 @@
       <screen x="0" y="40" width="1440" height="920" />
     </state>
     <state x="534" y="397" width="644" height="245" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.40.1440.920@0.40.1440.920" timestamp="1599883167988" />
-    <state x="365" y="39" width="921" height="761" key="#com.intellij.ide.util.MemberChooser" timestamp="1599900356282">
+    <state x="365" y="39" width="921" height="761" key="#com.intellij.ide.util.MemberChooser" timestamp="1601455425751">
       <screen x="0" y="40" width="1440" height="920" />
     </state>
     <state x="313" y="29" key="#com.intellij.ide.util.MemberChooser/0.30.1234.793@0.30.1234.793" timestamp="1595663734386" />
     <state x="519" y="30" width="921" height="761" key="#com.intellij.ide.util.MemberChooser/0.31.1440.929@0.31.1440.929" timestamp="1593848307330" />
-    <state x="365" y="39" key="#com.intellij.ide.util.MemberChooser/0.40.1440.920@0.40.1440.920" timestamp="1599900356282" />
+    <state x="365" y="39" key="#com.intellij.ide.util.MemberChooser/0.40.1440.920@0.40.1440.920" timestamp="1601455425751" />
     <state x="343" y="179" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1596379588072">
       <screen x="0" y="40" width="1440" height="920" />
     </state>
@@ -460,22 +464,18 @@
     <state width="957" height="245" key="GridCell.Tab.2.bottom" timestamp="1596355382078">
       <screen x="0" y="40" width="1440" height="920" />
     </state>
-    <state width="1397" height="229" key="GridCell.Tab.2.bottom/0.31.1440.929@0.31.1440.929" timestamp="1592411401480" />
     <state width="957" height="245" key="GridCell.Tab.2.bottom/0.40.1440.920@0.40.1440.920" timestamp="1596355382078" />
     <state width="957" height="245" key="GridCell.Tab.2.center" timestamp="1596355382078">
       <screen x="0" y="40" width="1440" height="920" />
     </state>
-    <state width="1397" height="229" key="GridCell.Tab.2.center/0.31.1440.929@0.31.1440.929" timestamp="1592411401480" />
     <state width="957" height="245" key="GridCell.Tab.2.center/0.40.1440.920@0.40.1440.920" timestamp="1596355382078" />
     <state width="957" height="245" key="GridCell.Tab.2.left" timestamp="1596355382077">
       <screen x="0" y="40" width="1440" height="920" />
     </state>
-    <state width="1397" height="229" key="GridCell.Tab.2.left/0.31.1440.929@0.31.1440.929" timestamp="1592411401480" />
     <state width="957" height="245" key="GridCell.Tab.2.left/0.40.1440.920@0.40.1440.920" timestamp="1596355382077" />
     <state width="957" height="245" key="GridCell.Tab.2.right" timestamp="1596355382078">
       <screen x="0" y="40" width="1440" height="920" />
     </state>
-    <state width="1397" height="229" key="GridCell.Tab.2.right/0.31.1440.929@0.31.1440.929" timestamp="1592411401480" />
     <state width="957" height="245" key="GridCell.Tab.2.right/0.40.1440.920@0.40.1440.920" timestamp="1596355382078" />
     <state x="-49" y="248" key="Maven.ArtifactSearchDialog" timestamp="1599886468801">
       <screen x="0" y="40" width="1440" height="920" />
@@ -498,7 +498,6 @@
     <state x="334" y="54" width="851" height="892" key="find.popup" timestamp="1600421247354">
       <screen x="0" y="40" width="1440" height="920" />
     </state>
-    <state x="334" y="45" width="773" height="900" key="find.popup/0.31.1440.929@0.31.1440.929" timestamp="1592491009589" />
     <state x="334" y="54" width="851" height="892" key="find.popup/0.40.1440.920@0.40.1440.920" timestamp="1600421247354" />
     <state x="216" y="205" key="new project wizard" timestamp="1597482796758">
       <screen x="0" y="40" width="1440" height="920" />
@@ -512,14 +511,13 @@
       <screen x="0" y="40" width="1440" height="920" />
     </state>
     <state x="323" y="199" key="run.anything.popup/0.30.1234.793@0.30.1234.793" timestamp="1595255629241" />
-    <state x="377" y="229" key="run.anything.popup/0.31.1440.929@0.31.1440.929" timestamp="1592410437261" />
     <state x="377" y="236" key="run.anything.popup/0.40.1440.920@0.40.1440.920" timestamp="1600744815335" />
-    <state x="431" y="238" width="785" height="448" key="search.everywhere.popup" timestamp="1599883242480">
+    <state x="431" y="238" width="785" height="448" key="search.everywhere.popup" timestamp="1601454283910">
       <screen x="0" y="40" width="1440" height="920" />
     </state>
     <state x="369" y="201" width="672" height="386" key="search.everywhere.popup/0.30.1234.793@0.30.1234.793" timestamp="1595654635967" />
     <state x="431" y="231" width="672" height="160" key="search.everywhere.popup/0.31.1440.929@0.31.1440.929" timestamp="1593846895838" />
-    <state x="431" y="238" width="785" height="448" key="search.everywhere.popup/0.40.1440.920@0.40.1440.920" timestamp="1599883242480" />
+    <state x="431" y="238" width="785" height="448" key="search.everywhere.popup/0.40.1440.920@0.40.1440.920" timestamp="1601454283910" />
     <state x="443" y="412" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1598582130904">
       <screen x="0" y="40" width="1440" height="920" />
     </state>

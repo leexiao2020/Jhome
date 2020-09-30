@@ -198,7 +198,7 @@ public class ExcelExport implements Closeable{
 	 */
 	public void createSheet(String sheetName, String title, Class<?> cls, Type type, String... groups){
 		this.annotationList = ListUtils.newArrayList();
-		// Get annotation field
+		// Get validator field
 		Field[] fs = cls.getDeclaredFields();
 		for (Field f : fs){
 			ExcelFields efs = f.getAnnotation(ExcelFields.class);
@@ -210,7 +210,7 @@ public class ExcelExport implements Closeable{
 			ExcelField ef = f.getAnnotation(ExcelField.class);
 			addAnnotation(annotationList, ef, f, type, groups);
 		}
-		// Get annotation method
+		// Get validator method
 		Method[] ms = cls.getDeclaredMethods();
 		for (Method m : ms){
 			ExcelFields efs = m.getAnnotation(ExcelFields.class);

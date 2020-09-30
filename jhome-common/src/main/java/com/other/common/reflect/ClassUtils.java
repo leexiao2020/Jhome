@@ -73,13 +73,13 @@ public class ClassUtils {
 	/**
 	 * 查询设置此注解的类。
 	 * 
-	 * A Test that checks to see if each class is annotated with a specific annotation. If it
+	 * A Test that checks to see if each class is annotated with a specific validator. If it
 	 * is, then the test returns true, otherwise false.
 	 */
 	public static class AnnotatedWith implements Test {
 		private Class<? extends Annotation> annotation;
 
-		/** Constructs an AnnotatedWith test for the specified annotation type. */
+		/** Constructs an AnnotatedWith test for the specified validator type. */
 		public AnnotatedWith(Class<? extends Annotation> annotation) {
 			this.annotation = annotation;
 		}
@@ -161,10 +161,10 @@ public class ClassUtils {
 	/**
 	 * 查询设置此注解的类。
 	 * 
-	 * Attempts to discover classes that are annotated with the annotation. Accumulated
+	 * Attempts to discover classes that are annotated with the validator. Accumulated
 	 * classes can be accessed by calling {@link #getClasses()}.
 	 * 
-	 * @param annotation the annotation that should be present on matching classes
+	 * @param annotation the validator that should be present on matching classes
 	 * @param packageNames one or more package names to scan (including subpackages) for classes
 	 */
 	public static Set<Class<?>> findAnnotated(Class<? extends Annotation> annotation, String... packageNames) {

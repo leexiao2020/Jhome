@@ -38,24 +38,23 @@ public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
     /**
     * 添加对象
     */
-    ResponseJson add${entity}(${entity}Query obj);
+    void add${entity}(${entity}Query obj) throws Exception;
     /**
     * 编辑对象
     */
-    ResponseJson edit${entity}(${entity}Query obj);
+    void edit${entity}(${entity}Query obj) throws Exception;
     /**
     * 删除对象
     */
-    ResponseJson delete${entity}(${entity}Query obj);
+    void delete${entity}(${entity}Query obj) throws Exception;
     /**
     * 批量删除对象
     */
-    ResponseJson batchDelete${entity}(String[]ids);
+    void batchDelete${entity}(String[]ids) throws Exception;
     /**
     * 分页系统
     */
-    IPage<${entity}> select${entity}PageList(${entity}Query queryObject);
-
+    PageUtils<List<${entity}>> select${entity}PageList( ${entity}Query queryObject) throws Exception;
 
     /**
      * 根据Id获取 单个对象
@@ -63,30 +62,28 @@ public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
      * @param id
      * @return
      */
-    ${entity} select${entity}ById(String id);
+    ${entity} select${entity}ById(String id) throws Exception;
 
     /**
      * 根据Ids获取多个对象
      *
      * @param
      */
-    List<${entity}> selectBatch${entity}ByIds(List<String> idList);
+    List<${entity}> selectBatch${entity}ByIds(List<String> idList) throws Exception;
 
     /**
      * 根据条件获取某个对象
      * @param queryObject
      * @return
      */
-    ${entity} select${entity}One(QueryWrapper<${entity}> queryObject);
+    ${entity} select${entity}One(QueryWrapper<${entity}> queryObject) throws Exception;
 
     /**
      * 根据自定义条件获取对象实体集合
      * @param queryObject
      * @return
      */
-    List<${entity}> select${entity}List(QueryWrapper<${entity}> queryObject);
+    List<${entity}> select${entity}List(QueryWrapper<${entity}> queryObject) throws Exception;
 
-
-
-        }
+    }
 #end

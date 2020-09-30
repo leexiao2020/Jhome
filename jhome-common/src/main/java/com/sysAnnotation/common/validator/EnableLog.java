@@ -1,4 +1,4 @@
-package com.sysAnnotation.common.annotation;
+package com.sysAnnotation.common.validator;
 
 import java.lang.annotation.*;
 
