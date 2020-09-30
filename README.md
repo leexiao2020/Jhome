@@ -1,4 +1,6 @@
-# Jhome框架
+# 《Jhome 分布式技术框架》
+
+## 《jhome分布式技术框架》是一个涵盖众多组件：账户认证/授权，消息推送，事务管理，自动化配置，快速部署，分布式文件管理，代码快速生成，服务治理的开发框架，旨在帮助开发者快速构建自己的应用，搭建方便，快速上手，快速开发；
 
 ## 技术概要：
 *  1.Spring全家桶 （SpringBoot Spring SpringCloud（eureka+feign+config+zuul+Hystrix） ）
@@ -15,20 +17,20 @@
 ## jhome 架构图 
 ![image](https://github.com/dayuhan/Jhome/blob/master/img-storage/1.jpg) 
 
-## jhome v1.4 框架升级内容  
-### 升级概要：引入文件上传服务（Jhome-fileStore）
+## jhome v1.4  
+### 升级概要：搭建文件上传服务（Jhome-fileStore）
 ### 引入技术： 
 *  FastDFS 分布式文件管理
 *  阿里云上传 
 *  普通本地仓库管理 
 
-## jhome v1.3 框架升级内容  
+## jhome v1.3
 ### 升级概要：搭建可靠消息服务（Jhome-TransactionService）
 ### 引入技术： 
 *  RabbitMq 消息队列 实现分布式系统中事务回滚
 
 
-## jhome v1.2 框架升级内容  
+## jhome v1.2  
 ### 升级概要：搭建代码生成器服务（jhome-codeGenerator），采velocity模板引擎，一键生成：controller dao mapper model/bo model/vo model/query service service/impl
 
 ### 引入技术： 
@@ -38,7 +40,7 @@
 ![image](https://github.com/dayuhan/Jhome/blob/master/img-storage/4.jpg) 
 
 
-## jhome v1.1 框架升级内容  
+## jhome v1.1
 
 ### 升级概要：该版本重点搭建了消息中心（jhome-NettyService），配置中心（jhome-configService），公共组件服务（jhome-common）
 
@@ -58,9 +60,9 @@
   
   
   
-## jhome v1.0 框架升级内容 
+## jhome v1.0
 
-### 升级概要：该版本重点引入了Shrio框架，针对在分布式系统中，各个服务之间用户授、认证做了集中处理: 搭建了注册中心（jhome-registrationService），统一管理各个服务
+### 升级概要：该版本重点引入了Shrio框架 Pack4J 框架（CAS单点登录），针对在分布式系统中，各个服务之间用户授、认证做了集中处理:  搭建了注册中心（jhome-registrationService），统一管理各个服务
 
 ### 引入技术： 
 *  1.Spring 全家桶 （SpringBoot Spring SpringCloud ）
@@ -97,13 +99,8 @@
 *  单点登陆成功后，在提供服务B端退出，消费A段无法退出
    （正在修复，消费A段退出，先调用A段的退出把Subject 认证状态isAuthenticated
     变成false,在调用服务B段退出设置B段的Subject的isAuthenticated，刷新当前页即可 服务B段退出，A段做做感知判断）
-    
-### 即将升级计划
-*  分段上传
-*  分页组件
-*  Netty 整合 RabbitMQ 形式实现
-
-### 本人微信号： daxu06661
+  
+### 如有问题可以联系本人，本人微信号： daxu06661    如果您觉得对您有帮助，请为我点赞~谢谢！！！
 
 
 
